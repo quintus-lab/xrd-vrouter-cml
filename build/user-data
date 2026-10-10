@@ -1,0 +1,11 @@
+#cloud-config
+hostname: xrd-golden
+package_update: true
+packages:
+  - docker.io
+  - pciutils
+runcmd:
+  - [bash, -c, "mkdir -p /mnt/cidata; mountpoint -q /mnt/cidata || mount /dev/sr0 /mnt/cidata || mount /dev/disk/by-label/cidata /mnt/cidata; bash /mnt/cidata/setup.sh"]
+power_state:
+  mode: poweroff
+  condition: false

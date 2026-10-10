@@ -1,0 +1,8 @@
+id: xrd-vr-e1000-26-2-2
+node_definition_id: xrd-vr-e1000
+label: XRd vRouter 26.2.2 (e1000)
+description: 'Golden disk built with build/build-golden.sh: Ubuntu 24.04, Docker and
+  ios-xrd-vrouter:26-2-2.'
+disk_image: xrd-vr-e1000-26-2-2.qcow2
+read_only: false
+schema_version: 0.0.1
